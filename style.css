@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f1f3f8;
+}
+
+.header {
+    text-align: center;
+    padding: 3vh 0;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    margin-top: 5vh;
+    border: 2px solid #1C2335;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#screen {
+    border-radius: 20px;
+    border-bottom: 2px solid #54affa;
+    height: 15vh;
+    background: #020202;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.buttons-container {
+    background: #050505;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: #090909;
+    font-size: 40px;
+    width: 8vh;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(143, 187, 248);
+    transition-property: border, background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #9cd7fc;
+    color: #0f0f0f;
+}
+
+.btn:active {
+    background-color: #71b2fc;
+    color: #0f0f0f;
+}
+
+.operator, #calculateBtn {
+    background: #000000;
+    border: 1px solid rgb(248, 163, 163);
+}
+
+.operator:hover, #calculateBtn:hover {
+    background-color: #fc7272;
+    color: #000000;
+}
+
+.operator:active, #calculateBtn:active {
+    color: white;
+    background-color: #151c2d;
+}
+
+.btn-wide {
+    width: 18vh;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+}
+
+.btn-red {
+    background-color: #010101;
+}
+
+.btn-red:hover {
+    background-color: #73ddfa;
+}
+
+.btn-red:active {
+    color: rgb(6, 6, 6);
+    background-color: #85fdfd;
+}
+
+#liveResult {
+    font-size: 16px;
+}
+
+.multiply-operator {
+    padding-top: 3px;
+    justify-content: center;
+    align-items: center;
+}
